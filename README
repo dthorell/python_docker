@@ -1,1 +1,5 @@
 Python container built from ubuntu 22.04
+
+docker buildx create --name mybuilder --driver docker-container --bootstrap --use
+docker buildx build --platform linux/amd64,linux/arm64 -t dthorell/python:3.10 .
+  
